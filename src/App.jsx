@@ -16,7 +16,7 @@ function App() {
 		<div className={
 			classNames(
 				'wrapper h-full w-full transition-all duration-1000 ease-in-out',
-				{'bg-red-200': fourth},
+				{'bg-white': fourth},
 				{'bg-white': !third},
 				{'bg-[#f07167]': second && !fourth}
 			)
@@ -71,12 +71,11 @@ function App() {
 					'third flex items-center justify-center h-full w-full transition-all duration-1000 ease-in-out flex-col gap-40',
 					{ ' bg-white': !third },
 					{'-translate-y-[200%]': third && !fourth},
-					{'-translate-y-[300%] bg-red-200': third && fourth},
+					{'-translate-y-[300%] bg-white': third && fourth},
 					{ ' bg-[#f07167]': third },
 					
 				)}
 			>
-				{/* <h1 className='happy'>Happy birthday (unfortunately, it's past)</h1> */}
 				{cake && (
 					<>
 						<div className='cake-wrapper '>
